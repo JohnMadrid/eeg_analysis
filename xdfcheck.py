@@ -65,9 +65,9 @@ def create_csv_by_millisecond(time_data_streams, sampling_rate=0.1, supplied_sta
 
 
 # Set parameters
-filename = 'C:/Users/Silvio Tannert/Downloads/DoNotBackup/! NEW DOWNLOADS !/john_pilot1.xdf'
-start_time_offset = 350 # start at defined point or later?
-time_window = 100 # in seconds
+filename = '/Users/johnmadrid/Local/data/nbp2022/wd_room/recorded/01_room1_010121.xdf'
+start_time_offset = 0 # start at defined point or later?
+time_window = 10 # in seconds
 use_photo_diode = False
 use_head_eye_tracking = not use_photo_diode
 csv_create = False
