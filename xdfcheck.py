@@ -65,7 +65,8 @@ def create_csv_by_millisecond(time_data_streams, sampling_rate=0.1, supplied_sta
 
 
 # Set parameters
-filename = '/Users/johnmadrid/Local/data/nbp2022/wd_room/recorded/01_room1_010121.xdf'
+# filename = '/Users/johnmadrid/Local/data/nbp2022/wd_room/recorded/01_room1_010121.xdf'
+filename = '/Users/johnmadrid/GitHub/eeg_analysis/data/39_room1_251022.xdf'
 start_time_offset = 0 # start at defined point or later?
 time_window = 10 # in seconds
 use_photo_diode = False
@@ -129,7 +130,8 @@ axes[0].set_xlabel("Time (s)")
 axes[0].set_ylabel("Unity (markers)")
 axes[0].set_title("Unity")
 axes[0].set_xlim(start_time, end_time)
-axes[0].set_ylim(data_unity.min()-1, data_unity.max() + 1)
+axes[0].set_ylim(0,3)
+# axes[0].set_ylim(data_unity.min()-1, data_unity.max() + 1)
 
 # photodiode stream
 if use_photo_diode:
